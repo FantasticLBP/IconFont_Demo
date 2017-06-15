@@ -65,7 +65,7 @@ pragma mark - getter and setter
 
 #### 做进一步封装，实用更加方便
 
-<p>利用IconFont生成1个UIImage只需要**LBPIconFontmake(par1, par2, par3)**，par1:iconfont的unicode值；par2:图片大小；par3:图片的颜色值。</p>
+<p>利用IconFont生成1个UIImage只需要LBPIconFontmake(par1, par2, par3)，par1:iconfont的unicode值；par2:图片大小；par3:图片的颜色值。</p>
 
 <p>其中，LBPIconFontmake是一个宏，#define LBPIconFontmake(text,size,color) [[LBPFontInfo alloc] initWithText:text withSize:size andColor:color]。</p>
 
