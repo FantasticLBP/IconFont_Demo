@@ -65,6 +65,16 @@ pragma mark - getter and setter
 
 #### 做进一步封装，实用更加方便
 
+<p>利用IconFont生成1个UIImage只需要**LBPIconFontmake(par1, par2, par3)**，par1:iconfont的unicode值；par2:图片大小；par3:图片的颜色值。</p>
+
+<p>其中，LBPIconFontmake是一个宏，#define LBPIconFontmake(text,size,color) [[LBPFontInfo alloc] initWithText:text withSize:size andColor:color]。</p>
+
+```
+self.latestImageView.image = [UIImage iconWithInfo:LBPIconFontmake(@"\U0000e6ac", 60, @"000066") ];
+```
+
+
+
 ![封装后的工程目录结构](https://github.com/FantasticLBP/iOSKonwledge-Kit/raw/master/assets/屏幕快照%202017-05-28%20下午2.56.00.png "封装后的工程目录结构")
 
 1. LBPFontInfo来封装字体信息
@@ -83,4 +93,3 @@ pragma mark - getter and setter
 # Demo地址
 
 [https://github.com/FantasticLBP/IconFont\_Demo](https://github.com/FantasticLBP/IconFont_Demo)
-
